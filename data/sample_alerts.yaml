@@ -1,0 +1,24 @@
+projects:
+  - key: CORE
+    name: Core Infrastructure Refresh
+    description: "Stabilize shared tooling inspired by GitNexus hackathon retrospectives."
+    tags: [infrastructure, automation]
+  - key: OPS
+    name: Operations Flywheel
+    description: "Incident routing experiments focused on on-call empathy."
+    tags: [ops, culture]
+alerts:
+  - identifier: A-101
+    title: "Provisioning latency spike"
+    narrative: "CI pipelines saturated during the hackathon scaling test."
+    impact: high
+    project_key: CORE
+    owners: ["june", "mason"]
+    references: ["https://status.example.com/hackathon"]
+  - identifier: A-102
+    title: "Pager fatigue feedback"
+    narrative: "Participants flagged confusing hand-offs; empathy workshop proposed."
+    impact: medium
+    project_key: OPS
+    owners: ["sora"]
+    references: []

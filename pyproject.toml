@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kuzualerts"
+version = "0.1.0"
+description = "In-memory incident collaboration toolkit inspired by the GitNexus hackathon project."
+authors = [
+  {name = "KuzuAlerts Team", email = "team@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = ["hackathon", "collaboration", "alerts", "knowledge-base"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+dependencies = []
+
+[project.urls]
+"Homepage" = "https://github.com/Cicada31113/GitNexus"
+"Repository" = "https://github.com/Cicada31113/GitNexus"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
